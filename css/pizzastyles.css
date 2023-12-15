@@ -1,0 +1,244 @@
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+}
+
+.navbar .logo {
+    max-width: 15%;
+    margin-left: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li:hover {
+    color:rgb(255, 221, 0)
+}
+
+/* HEADER */
+.header {
+    position: relative;
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pizzatitle {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: rgb(255, 162, 0);
+    text-shadow:1px 1px 30px black, 1px 1px 30px black;
+}
+
+/* MENU BUTTONS */
+
+.menubuttons {
+    display: flex;
+    position: absolute;
+    top: 67%;
+    left: 10%;
+    z-index: 1;
+}
+
+.menubuttons div {
+    margin-right:65px;
+    font-size: 20px;
+}
+
+.menubuttons a {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.menubuttons a:hover {
+    background-color: rgb(255, 162, 0);
+    color: white;
+}
+
+/* ITEMS */
+.pizzaitems {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 3% 5% 3% 5%;
+}
+  
+.item {
+padding: 10px;
+}
+
+.price {
+    color: rgb(255, 162, 0);
+    font-weight: bold;
+}
+
+/* BUILD */
+.build {
+    background-color: rgb(255, 221, 0);
+    padding: 5% 5% 7% 5.75%;
+}
+
+.buildtitle {
+    font-size: 40px;
+}
+
+.buildline {
+    position: absolute;
+    margin-top: 13%;
+    border-top: 5px solid white;
+    width: 16%;
+}
+
+.toppings {
+    padding-left: 35%;
+    padding-top: 5%;
+}
+
+.addons {
+    padding-top: 5%;
+    line-height: 190%;
+}
+
+.buildprice {
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    padding-bottom: 7%;
+    display: flex;
+}
+
+.footerlogo {
+    max-width: 15%;
+    margin-left: 50px;
+    margin-top: 1%;
+    margin-right: 0;
+}
+
+.site {
+    position: absolute;
+    margin-left: 50%;
+}
+
+.sitetitle {
+    color: white;
+}
+
+.sitelinks {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 40px;
+    grid-template-rows: 2;
+    row-gap: 20px;
+    color: white;
+    font-size: smaller;
+}
+
+.sitelinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.social {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1;
+    color: white;
+    margin-left: 69%;
+}
+
+.fblogo {
+    width: 20%;
+}
+
+.contact {
+    position: absolute;
+    margin-left: 80%;
+}
+
+.locationtitle {
+    color: white;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: smaller;
+}
+
+.location img {
+    margin-right: 10px;
+    width: 7%;
+}
+
+.phonefooter {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: smaller;
+}
+
+.phonefooter img {
+    margin-right: 10px;
+    width: 7%;
+}
